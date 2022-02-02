@@ -7,6 +7,10 @@ Practice using nested for loops to iterate through different data
 # Below is a nested data structure containing a list of lists called "toppings". Use a nested
 # for loop to print each topping.
 
+from pickle import LIST
+from typing import List
+
+
 toppings = [
   ["lettuce", "tomato", "onion"],
   ["bacon", "cheese", "avocado"]
@@ -39,10 +43,17 @@ movie_series = {
   }
 }
 
-# The nested dictionary "movie_series" contains the first 3 movies in a few popular movie
-# franchises. Iterate through "movie_series" and print the statement: "The second movie in the
-# [franchise] franchise is [movie]." (i.e The second movie in the The Hunger Games franchise is
-# Catching Fire.)
+for franchise_num in movie_series:
+  franchise = movie_series[franchise_num]
+  for movie_num in franchise:
+    movie = franchise[movie_num]
+    if (franchise['third'] == movie):
+      for letter in movie:
+        print(letter)
+           
+# For the third movie of every movie series, print out each letter of the movie individually i.e - T h e H u n...
+
+# The nested dictionary "movie_series" contains the first 3 movies in a few popular movie franchises. Iterate through "movie_series" and print the statement: "The second movie in the [franchise] franchise is [movie]." (i.e The second movie in the The Hunger Games franchise is Catching Fire.)
 
 # HINT: Use a nested "for loop" to iterate through "movie_series".
 
@@ -73,7 +84,7 @@ transactions_data = [
     "acct": "BofA Savings",
   },
   {
-    "amount": "1500",
+    "amount": 1500,
     "place": "Chipotle",
     "acct": "Chase Checking",
   },
@@ -107,4 +118,10 @@ transactions_data = [
 def transactify(transactions):
     """This function should complete the above tasks"""
 
-transactify(transactions_data) 
+def transactify(transactions_data):
+  
+
+
+      
+
+
