@@ -10,10 +10,12 @@ Using variables and types
 
 from ctypes.wintypes import SC_HANDLE
 
+
 phrase1 = "Hi everyone! "
-phrase2 = "My name is Shane."
+phrase2 = "My name is Shane. "
 complete = phrase1 + phrase2
 print(complete)
+
 ####################################################################################################
 
 # TODO: Section 2:
@@ -33,7 +35,7 @@ print(flt1, flt2)
 
 name = "Shane"
 age = 19
-print("My name is", name, "and I am", age, "years old.")
+print(f"My name is {name} and I am {age} years old.")
 
 # Takeaway:
 # Concatenation (+) can only be done with strings, not strings and integers/floats. Commas, however,
@@ -48,13 +50,6 @@ print("My name is", name, "and I am", age, "years old.")
 # To check the type of something in python, you use the type() function.
 # For example, type("Hello") would yield string, and type(6) would yield int.
 # So, create on print statement that would print the type of each variable you've set.
-
-int1, flt1, bool1, str1 = 5, 14.5, True, "hi"
-print("int1:", type(int1))
-print("flt1:", type(flt1))
-print("bool1:", type(bool1))
-print("str1:", type(str1))
-
 
 # Takeaway:
 # Types are important in Python and you can check different elements' types using type().
@@ -72,10 +67,6 @@ print("str1:", type(str1))
 # variables. However, this time when you're concatenating the age variable, wrap it in the
 # str() function as such: str(age). The print statement will no longer throw an
 # error 🎯 since age was converted to a string.
-
-name = "Shane"
-age = "19"
-print("My name is " + name + " and I am " + str(age) + " years old.")
 
 # Takeaway:
 # We can change types in Python when appropriate, and we learned one way to do so with str()

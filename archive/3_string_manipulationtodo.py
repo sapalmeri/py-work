@@ -8,8 +8,11 @@ Using string manipulation
 # user by printing "Hello [full_name], welcome to your personality quiz!" Make sure the comma comes
 # directly after the "full_name" variable.
 
-full_name = input("What is your full name? ")
-print("Hello ", full_name, ", welcome to your personality quiz!")
+full_name = "What is your full name? "
+statement = "Hello [full_name], welcome to your personality quiz!"
+print(statement)
+
+
 ####################################################################################################
 
 # TITLE: Section 2 - Modifying the Casing of Strings
@@ -21,10 +24,11 @@ print("Hello ", full_name, ", welcome to your personality quiz!")
 # HINT: You should only have one print statement.
 
 classic = "thE GREat GatSBy"
-classic_title = classic.title()
-classic_upper = classic.upper()
-classic_lower = classic.lower()
-print("\n" + classic_title + "\n" + classic_upper + "\n" + classic_lower)
+classic_title = classic. title
+classic_upper = classic. upper 
+classic_lower = classic. lower
+print(classic_title(), "\n" + classic_upper(), "\n" + classic_lower())
+
 
 ####################################################################################################
 

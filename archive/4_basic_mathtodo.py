@@ -23,10 +23,11 @@ Lets calculate a company's taxes, profit, and then divide the profit amongst sha
 # profit = profit / 2 #IMPORTANT: Uncomment this line before moving on.
 
 TAX_RATE = .20
-revenue = float(input("What was your revenue for this year? "))
-taxes_paid = revenue * TAX_RATE
-profit1 = revenue - taxes_paid
-profit = profit1 / 2
+revenue = float(input("What was your revenue for this year?"))
+taxes_paid = TAX_RATE * revenue
+profit = revenue - taxes_paid
+profit = profit / 2
+print(profit)
 
 
 # TODO: Section 1.1:
@@ -34,7 +35,7 @@ profit = profit1 / 2
 # paid $______ in taxes, recorded a profit of $______, and paid $______ to their five
 # shareholders, evenly". Be sure to format to look like normal dollar amounts - "$xx.xx"
 
-print("Company Shane recorded $", revenue, " in revenue this year, paid $", taxes_paid, " recorded a profit of $", profit1, " and paid $", profit, " to their five shareholders, evenly.")
+print("Company Shane recorded $10000.00 in revenue this year, paid $2000.00 in taxes, recorded a profit of $4000.00, and paid $800.00 to their five shareholders, evenly.")
 
 # TAKEAWAY:
 # 1) Variables that have input functions stored in them will be of the string type. To use them in
@@ -51,10 +52,12 @@ num_list = [35, 4, 20, 100, 96]
 # "The ___ of num_list is ___." using f shorthand.
 
 min_num = min(num_list)
-max_num = max(num_list)
-sum_list = sum(num_list)
 print(f"The min of num_list is {min_num}.")
+
+max_num = max(num_list)
 print(f"The max of num_list is {max_num}.")
+
+sum_list = sum(num_list)
 print(f"The sum of num_list is {sum_list}.")
 
 # TODO: Section 2.1:
@@ -64,6 +67,6 @@ num_list2 = [-20, 15, -27, -11]
 # print in the format, "The absolute value of sum2 is ___".
 
 sum2 = sum(num_list2)
-print(f"The sum is {sum2}")
-abs = abs(sum2)
-print(f"The absolute value of sum2 is {abs}.")
+print(f"The sum is {sum2}.")
+abs_neg = abs(-43)
+print(f"The asbolute value of sum2 is {abs_neg}.")
