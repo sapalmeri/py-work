@@ -17,9 +17,6 @@ class User:
         self.username = username
         self.__password = password
 
-    # def __set_attributes(self):
-    #     self.password = password
-
     def check_password(self):
         password = input("What is the password?: ")
         if password == self.__password:
@@ -30,8 +27,9 @@ class User:
 user1 = User("cool_coder", "abcd1234!")
 
 user1.check_password()
-# print(user1.password)
+
 print(user1.__password)
+# can't access
 
 
 # Next define an instantiation of the "User" class with "username" equal to "cool_coder" and
